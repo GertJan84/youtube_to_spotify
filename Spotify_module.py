@@ -13,11 +13,10 @@ class Spotify:
 
         if results:
             uri = result["tracks"]["items"][0]["uri"]
-            if not uri == None:
-                return uri
+            return uri
         else:
-            print(f"No song found for {artist} = {track}")
-
+            # Cant find song
+            pass
         
 
     def add_songs_to_spotify(self, song_uris):
